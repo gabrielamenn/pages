@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Média Aritmética</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+        }
+        .media {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #resultado {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="script5.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Média Aritmética</h1>
+        <h4>Para calcular a média aritmética das notas obtidas, preencha as informações abaixo:</h4>
+    </header>
+    <div class="container">
+        <div class="media">
+            <label for="numero1">Nota 1:</label>
+            <input type="number" id="numero1" step="0.01">
+        </div>
+        <div class="media">
+            <label for="numero2">Nota 2:</label>
+            <input type="number" id="numero2" step="0.01">
+        </div>
+        <div class="media">
+            <label for="numero3">Nota 3:</label>
+            <input type="number" id="numero3" step="0.01">
+        </div>
+        <div class="media">
+            <label for="numero4">Nota 4:</label>
+            <input type="number" id="numero4" step="0.01">
+        </div>
+        <div class="media">
+            <label for="numero5">Nota 5:</label>
+            <input type="number" id="numero5" step="0.01">
+        </div>
+        <button onclick="calcularMedia()">Calcule a média</button>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
